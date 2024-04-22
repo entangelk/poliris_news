@@ -30,13 +30,16 @@ mongoClient = MongoClient("mongodb://localhost:27017")
 # database 연결
 database = mongoClient["news_get"]
 # collection 작업
-news_get = database['daum_news']
+news_get = database['daum_news_share']
 
 # Chrome WebDriver의 capabilities 속성 사용
 capabilities = browser.capabilities
 from selenium.webdriver.common.by import By
 
-url = 'https://search.daum.net/search?nil_suggest=btn&w=news&DA=STC&cluster=y&q=%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4+%EC%98%A4%ED%94%BC%EC%8A%A4&sd=20220101000000&ed=20240422235959&period=u&p=1&sort=old'
+# url = 'https://search.daum.net/search?nil_suggest=btn&w=news&DA=STC&cluster=y&q=%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4+%EC%98%A4%ED%94%BC%EC%8A%A4&sd=20220101000000&ed=20240422235959&period=u&p=1&sort=old'
+# url = 'https://search.daum.net/search?nil_suggest=btn&w=news&DA=STC&cluster=y&q=%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4+%EC%98%A4%ED%94%BC%EC%8A%A4&sd=20240106000000&ed=20240422235959&period=u&sort=old'
+
+url = 'https://search.daum.net/search?nil_suggest=btn&w=news&DA=STC&cluster=y&q=%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4+%EC%89%90%EC%96%B4%ED%85%8C%ED%81%AC&sd=20220101000000&ed=20240422235959&period=u&p=1&sort=old'
 
 browser.get(url)
 time.sleep(2)
