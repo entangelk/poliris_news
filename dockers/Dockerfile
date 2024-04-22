@@ -19,11 +19,11 @@ ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-amd64
 # 작업 디렉토리 설정
 WORKDIR /app
 
-ARG BRANCH_NAME=hancom_keyword
-ARG DIR_NAME=hancom_keyword
+ARG BRANCH_NAME=polaris_news
+ARG DIR_NAME=polaris_news
 
 # Clone the Git repository. Here we dynamically specify the repository name using the variable defined earlier.
-RUN git clone https://github.com/skymined/hancom_keyword ${DIR_NAME}
+RUN git clone https://github.com/entangelk/poliris_news ${DIR_NAME}
 
 # Changes the working directory to /app/${REPO_NAME}. This uses the variable to dynamically set the directory path.
 WORKDIR /app/${DIR_NAME}
