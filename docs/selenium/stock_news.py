@@ -155,6 +155,6 @@ while True:
         
         
     time.sleep(2)
-
+print(times)
 # 브라우저 종료
 browser.quit()
