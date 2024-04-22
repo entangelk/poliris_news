@@ -29,6 +29,7 @@ RUN git clone https://github.com/entangelk/poliris_news ${DIR_NAME}
 WORKDIR /app/${DIR_NAME}
 
 # RUN pip install --no-cache-dir -r ./requirements.txt
+COPY requirements.txt .
 RUN pip install -r ./requirements.txt
 
 # RUN rm -rf .git
