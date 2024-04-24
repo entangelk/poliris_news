@@ -19,6 +19,7 @@ pymongo
 python-mecab-ko
 pyLDAvis
 gensim
+prophet
 
 requests
 beautifulsoup4
