@@ -51,7 +51,7 @@ flag = False
 
 for i in range(int(number_text)):
     page = i + 1
-    browser.get(f"https://finance.naver.com/item/sise_day.naver?code=030520&page={page}")
+    browser.get(f"https://finance.naver.com/item/sise_day.naver?code=041020&page={page}")
 
     time.sleep(1)
     # 주가 정보 영역 가져오기
